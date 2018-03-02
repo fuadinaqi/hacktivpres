@@ -1,0 +1,24 @@
+<template lang="html">
+  <div class="">
+    <article v-for="article in dataArticles" :key="article._id" class="message">
+      <div class="message-header">
+        <p>{{ article.title }}</p>
+      </div>
+      <div class="message-body">
+        {{ article.content }}
+      </div>
+    </article>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'PreviewArticle',
+  props: [
+    'dataArticles'
+  ]
+}
+</script>
+
+<style lang="css" scoped>
+</style>

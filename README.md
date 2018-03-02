@@ -15,9 +15,12 @@ Articles :
 
 | Route | HTTP | Description |
 | ----- | ---- | ----------- |
-| /articles/ | GET | Get his articles in database (user login only) |
-| /articles/add | POST | Create a new article (user login only) |
-| /articles/:id | GET | Get one specific articles in database (user login only) |
+| /articles/ | GET | Get all articles in database |
+| /articles/profile | GET | Get his articles in database (user login only) |
+| /articles/category | GET | Get articles search by category in database |
+| /articles/create | POST | Create a new article (user login only) |
+| /articles/upload | POST | Upload an image of article using multer and send to google cloud storage (user login only) |
+| /articles/:id | GET | Get one specific articles in database |
 | /articles/:id | PUT | Update / edit an article (user login only) |
 | /articles/:id | DELETE | Delete a specific article by params id (user login only) |
 

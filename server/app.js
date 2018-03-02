@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose')
 var jwt = require('jsonwebtoken')
+var cors = require('cors')
 require('dotenv').config()
 // mongoose.connect('mongodb://fuadinaqi:fuadiganteng@ds253468.mlab.com:53468/testing')
 mongoose.connect('mongodb://localhost/test');
@@ -25,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/authors', authors);
-// app.use('/articles', articles);
+app.use('/articles', articles);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

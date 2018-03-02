@@ -1,0 +1,4 @@
+SECRET_KEY=<your key>
+CLOUD_BUCKET=<your bucket on gcp>
+GCLOUD_PROJECT=<your gcloud project id>
+KEYFILE_PATH=keyfile.json(use your credential on your gcp)

@@ -5,6 +5,7 @@
         <p>{{ article.title }}</p>
       </div>
       <div class="message-body">
+        <img :src="article.image" style="width:auto;" alt="articleImage">
         {{ article.content }}
       </div>
     </article>

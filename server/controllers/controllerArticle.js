@@ -38,6 +38,7 @@ module.exports = class ControllerArticle {
     let objCreate = {
       title: req.body.title,
       content: req.body.content,
+      image: req.body.image,
       category: req.body.category,
       authorId: req.headers.authorId
     }

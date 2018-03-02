@@ -8,6 +8,7 @@
         <img :src="article.image" style="width:auto;" alt="articleImage">
         {{ article.content }}
       </div>
+      <router-link :to="{ path: `/articles/${article._id}`, params: { id: article._id } }">Detail</router-link>
     </article>
   </div>
 </template>
